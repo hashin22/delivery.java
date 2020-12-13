@@ -85,20 +85,20 @@ public class Window {
 			}
 		}
 
-		public static void viewData() throws SQLException {
-			if(!rs.next()){
-				System.out.println("!rs.next()");
-				count--;
-			}
-			else{		
-					System.out.println("rs.next()");
-					num_t.setText(String.valueOf(rs.getLong("id"))); //필드명
-		
-					name_t.setText(rs.getString("name"));
-						
-					telNo_t.setText(rs.getString("telNo"));
-			}
-		}
+//		public static void viewData() throws SQLException {
+//			if(!rs.next()){
+//				System.out.println("!rs.next()");
+//				count--;
+//			}
+//			else{		
+//					System.out.println("rs.next()");
+//					num_t.setText(String.valueOf(rs.getLong("id"))); //필드명
+//		
+//					name_t.setText(rs.getString("name"));
+//						
+//					telNo_t.setText(rs.getString("telNo"));
+//			}
+//		}
 
 		public static void dbDis(){
 			try {
